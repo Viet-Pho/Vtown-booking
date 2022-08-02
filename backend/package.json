@@ -1,0 +1,39 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "V-town-booking api",
+  "author": "Azoom",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "env $(grep -v '^#' .env) nodemon index.js",
+    "start": "env $(grep -v '^#' .env) node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "camelcase-keys": "^6.2.2",
+    "cors": "^2.8.5",
+    "date-fns": "^2.15.0",
+    "esm": "^3.2.25",
+    "express": "^4.16.4",
+    "express-promise-router": "^3.0.3",
+    "knex": "^0.16.2",
+    "mysql": "^2.18.1",
+    "knex-paginator": "^2.0.0",
+    "module-alias": "^2.2.2",
+    "nnn-router": "^1.0.5",
+    "node-mocks-http": "^1.8.1",
+    "snakecase-keys": "^3.2.0",
+    "statuses": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "_moduleAliases": {
+    "@api": "./",
+    "@constants": "./constants/",
+    "@helpers": "./helpers/",
+    "@middleware": "./middleware/",
+    "@util": "./util/"
+  }
+}
